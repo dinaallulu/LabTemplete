@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laboratory Templete</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c1cd79ef47.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar Section Start -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent;">
+        <div class="container-fluid">
+            <a class="navbar-brand editText" href="#">Name Laboratory</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">TEAM</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Section END -->
+
+    <!-- Header Section Start -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="text-block">
+                        <h1 class="title editText"> Name Laboratory</h1>
+                        <p class="subtitle editText">
+                            Faculty of Engineering<br />
+                            Computer Engineering Department<br />
+                            Islamic University of Gaza
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 imgSide">
+                    <img id="headerImage" class="image-header"
+                        src="https://images.squarespace-cdn.com/content/v1/5fce63270356d927d7eecdbd/033e9988-2ac8-4cb9-8b9f-5bf05fb22dcb/gff.jpg">
+                    <div class="dropdown iconImgEdit">
+                        <button class="btn btn-light dropdown-toggle no-arrow" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-camera-retro"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <input type="file" id="fileInput" style="display: none;" accept="image/*">
+                                <a class="dropdown-item" id="uploadBtn" href="#">ADD Image</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" id="showLinkInputBtn" href="#">ADD Link Image</a>
+                                <input type="text" id="linkInput" class="form-control" placeholder="Enter image URL"
+                                    style="display: none;">
+                                <button class="dropdown-item" id="addLinkBtn" style="display: none;">Add img</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section END -->
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+        <div class="container">
+            <h3 class="editText">About laboratory</h3>
+            <p class="editText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dicta quidem, a pariatur laudantium illum
+                eum! Tenetur cumque aut beatae recusandae in, sapiente expedita voluptatum harum, odio nihil velit
+                dolor. Qui quidem fuga id culpa sit, odit temporibus neque voluptatum totam voluptates rem autem aliquam
+                error blanditiis cumque dolorum voluptas accusamus est, numquam doloremque! Ducimus earum reiciendis
+                maxime consequatur laudantium. Porro sapiente quae mollitia ipsa, voluptates laudantium sequi corporis
+                quos sit, itaque rem consequatur necessitatibus hic praesentium ea deleniti repellendus ullam. A facilis
+                incidunt similique veritatis, voluptas excepturi mollitia ut. Placeat consectetur provident atque nam
+                corrupti dicta voluptates quasi. Dolorum unde odio doloribus fugiat voluptatum quam corrupti nulla error
+                sunt laborum delectus earum tempore ducimus, officiis culpa ea hic deserunt! Nihil beatae itaque nostrum
+                facilis facere. Nisi magni dignissimos quam voluptatibus veritatis nostrum, explicabo dolorem animi
+                facere autem? Minima, dignissimos officiis vero nostrum itaque culpa quibusdam
+                labore eligendi praesentium architecto!
+            </p>
+        </div>
+    </section>
+    <!-- About Section END -->
+
+    <!-- Team Section Start -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="row" id="teamCardsContainer">
+                <h3 class="editText">Team Laboratory</h3>
+                <!-- Existing Card Template -->
+                <div class="col-sm-12 col-md-6 col-lg-4 team-card">
+                    <div class="card" style="width: 25rem;">
+                        <img class="headerImage card-img-top"
+                            src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/10/computer_engineer-compare-page.jpg"
+                            alt="Team Member">
+
+                        <!-- Edit Image Div Start -->
+                        <div class="dropdown iconImgEdit">
+                            <button class="btn btn-light dropdown-toggle no-arrow editImageBtn" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-camera-retro"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <input type="file" class="fileInput" style="display: none;" accept="image/*">
+                                    <a class="dropdown-item uploadBtn" href="#">ADD Image</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item showLinkInputBtn" href="#">ADD Link Image</a>
+                                    <input type="text" class="linkInput form-control" placeholder="Enter image URL"
+                                        style="display: none;">
+                                    <button class="dropdown-item addLinkBtn" style="display: none;">Add img</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Edit Image Div End -->
+
+                        <div class="card-body">
+                            <h5 class="card-title editText">Dr. Thomas</h5>
+                            <p class="card-text editText">Professor of Computer Engineering</p>
+                            <p class="card-text editText">
+                                Lorem ipsum dolor iste, omnis non et incidunt, quam ex
+                                perferendis qui fuga necessitatibus vitae quis!
+                            </p>
+
+                            <!-- Icon Edit Div Start -->
+                            <div class="card-icons">
+                                <div class="icon-container">
+                                    <a href="#" class="socialLink" data-type="Gmail">
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </a>
+                                </div>
+                                <div class="icon-container">
+                                    <a href="#" class="socialLink" data-type="GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                                <div class="icon-container">
+                                    <a href="#" class="socialLink" data-type="LinkedIn">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </div>
+                                <div class="icon-container">
+                                    <a href="#" class="socialLink" data-type="Twitter">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Icon Edit Div End -->
+
+                            <!-- Modal for Editing Links -->
+                            <div class="modal fade editModal" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Edit Link</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="editLinkForm">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Update <span class="linkType"></span>
+                                                        Link</label>
+                                                    <input type="text" class="form-control socialInput"
+                                                        placeholder="Enter link URL">
+                                                </div>
+                                                <button type="button" class="btn btn-dark saveLinkBtn">Save
+                                                    changes</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END Modal for Editing Links -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar structure for other existing cards -->
+                <!-- Add New Card -->
+                <div class="col-sm-12 col-md-6 col-lg-4" id="addNewCard">
+                    <div class="card add-card"
+                        style="width: 25rem; display: flex; justify-content: center; align-items: center; cursor: pointer;">
+                        <!-- <i class="fa-solid fa-user-plus fa-2x"></i> -->
+                        <img src="https://cdn-icons-png.flaticon.com/512/9775/9775776.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section END -->
+
+    <!-- Footer Section Start -->
+    <footer>
+        <p class="editText">
+            The 3D From IUGaza
+    </footer>
+    <!-- Footer Section END -->
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
